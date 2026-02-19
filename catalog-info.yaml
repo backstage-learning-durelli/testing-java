@@ -1,0 +1,17 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: testing-java
+  description: Projeto Spring Boot criado via Backstage com CI/CD e ArgoCD
+  annotations:
+    github.com/project-slug: backstage-learning-durelli/testing-java
+    argocd/app-name: testing-java
+    backstage.io/kubernetes-id: testing-java
+  labels:
+    system: testing-java
+    managed-by: backstage
+spec:
+  type: service
+  lifecycle: experimental
+  owner: group:default
+  system: testing-java
